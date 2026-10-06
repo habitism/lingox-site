@@ -1,5 +1,7 @@
 ---
-title: 语桥
+layout: page
+title: 隐私政策
+permalink: /privacy/
 ---
 
 我（开发者）不会通过这个应用程序收集任何数据。

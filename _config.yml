@@ -1,2 +1,12 @@
 title: 语桥
-description: 通过中文学英语
+description: 从你想说的中文出发，用 AI 翻译、句子分析、表达优化和逐句精听，练习英语表达。
+url: "https://lingox.cn"
+baseurl: ""
+lang: zh-CN
+markdown: kramdown
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
