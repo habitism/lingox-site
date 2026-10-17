@@ -29,6 +29,4 @@ DNS 验证和证书签发完成后，在 Pages 设置中启用 Enforce HTTPS。�
 
 App Store： https://apps.apple.com/app/id6708231214
 
-lingox-ios 当前的 MURL.swift 仍使用旧的 habitism.github.io/lingox 地址；后续应用发版需将官网、隐私政策、使用条款链接分别改为 `https://lingox.cn/`、`https://lingox.cn/privacy/`、`https://lingox.cn/eula/`。
-
-隐私政策目前保留原文。应用包含第三方 AI 请求，上线前应根据实际数据处理行为核对政策中“不会收集任何数据”和“只存储在设备与 iCloud”的表述。
+应用隐私政策和使用条款使用 `/privacy/`、`/eula/`，保持原链接兼容。
