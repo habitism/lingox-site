@@ -28,7 +28,7 @@ h1, h2 { font-family: var(--serif); font-weight: 500; letter-spacing: -.04em; li
 .main-nav a:hover, .text-link:hover, .site-footer a:hover { color: var(--brand); }
 .hero { min-height: 690px; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 70px; padding-block: 72px 88px; }
 .eyebrow { margin: 0 0 20px; color: var(--brand); letter-spacing: .16em; font-size: .76rem; font-weight: 700; }
-.hero h1 { max-width: 650px; margin-bottom: 24px; font-size: clamp(3.2rem, 6.4vw, 5.4rem); }
+.hero h1 { max-width: 650px; margin-bottom: 24px; font-size: clamp(2.8rem, 4.4vw, 3.6rem); }
 .hero h1 em { color: var(--brand); font-style: normal; }
 .hero-copy > p:not(.eyebrow) { max-width: 550px; color: var(--muted); font-size: 1.08rem; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 34px; }
@@ -38,18 +38,8 @@ h1, h2 { font-family: var(--serif); font-weight: 500; letter-spacing: -.04em; li
 .hero-note { margin: 14px 0 0; color: var(--muted); font-size: .82rem; }
 .hero-visual { position: relative; height: 520px; display: grid; place-items: center; }
 .sun { position: absolute; width: min(390px, 90%); aspect-ratio: 1; border-radius: 50%; background: #e9e3d5; }
-.phone { position: relative; width: 252px; height: 490px; padding: 9px; border: 1px solid #35352f; border-radius: 38px; background: #262721; box-shadow: 0 28px 60px rgba(39, 37, 27, .2); transform: rotate(3deg); }
+.phone { position: relative; width: 252px; height: 510px; padding: 9px; border: 1px solid #35352f; border-radius: 38px; background: #262721; box-shadow: 0 28px 60px rgba(39, 37, 27, .2); transform: rotate(3deg); }
 .phone-screen { height: 100%; padding: 34px 18px 20px; overflow: hidden; border-radius: 29px; background: #fbfaf6; }
-.screen-top { display: flex; justify-content: space-between; color: var(--muted); font-size: .68rem; }
-.screen-date { margin: 30px 0 5px; color: var(--muted); font-size: .72rem; }
-.screen-title { margin: 0 0 22px; font-family: var(--serif); font-size: 1.65rem; }
-.todo { display: flex; align-items: center; gap: 10px; margin-bottom: 11px; padding: 12px 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--white); font-size: .76rem; }
-.check { width: 17px; height: 17px; flex: 0 0 17px; border: 1px solid #aaa99f; border-radius: 50%; }
-.check.done { display: grid; place-items: center; color: white; border-color: var(--brand); background: var(--brand); font-size: .65rem; }
-.todo small { display: block; color: var(--muted); font-size: .62rem; }
-.screen-score { margin-top: 25px; padding: 16px; border-radius: 14px; color: var(--brand-dark); background: #f0e8dc; }
-.screen-score small { display: block; color: var(--muted); font-size: .65rem; }
-.screen-score strong { font-family: var(--serif); font-size: 1.8rem; font-weight: 500; }
 .intro { padding: 74px 0 82px; border-top: 1px solid var(--line); }
 .section-heading { max-width: 640px; margin-bottom: 36px; }
 .section-heading h2 { margin-bottom: 14px; font-size: clamp(2.2rem, 4.5vw, 3.5rem); }
@@ -89,9 +79,9 @@ h1, h2 { font-family: var(--serif); font-weight: 500; letter-spacing: -.04em; li
   .main-nav { gap: 15px; }
   .main-nav a { font-size: .82rem; }
   .hero h1 { font-size: 3.1rem; }
-  .hero-visual { height: 430px; transform: scale(.9); margin: -8px -15px -25px; }
+  .hero-visual { height: 520px; }
   .sun { width: 350px; }
-  .phone { width: 230px; height: 450px; }
+  .phone { width: 230px; height: 490px; }
   .intro { padding-block: 58px; }
   .legal-page { padding-top: 48px; }
   .site-footer nav { flex-wrap: wrap; }
@@ -102,16 +92,20 @@ h1, h2 { font-family: var(--serif); font-weight: 500; letter-spacing: -.04em; li
 .store-button small { display: block; margin-bottom: 3px; font-size: .66rem; font-weight: 400; }
 .store-icon { width: 25px; height: 25px; object-fit: contain; filter: invert(1); }
 
-/* 语桥学习界面示意 */
-.feature-grid { grid-template-columns: repeat(3, 1fr); }
-.sentence-card { padding: 14px; margin-bottom: 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--white); }
-.sentence-label { display: block; margin-bottom: 8px; color: var(--muted); font-size: .6rem; letter-spacing: .06em; }
-.sentence-card p { margin: 0; font-size: .85rem; line-height: 1.6; }
-.english-card { background: #f0e8dc; border-color: transparent; }
-.english-card p { font-size: .94rem; }
-.listen-cue { display: block; margin-top: 14px; color: var(--brand-dark); font-size: .7rem; }
-.practice-tools { display: flex; justify-content: space-around; margin-top: 20px; color: var(--brand); font-size: .7rem; }
-.screen-caption { margin-top: 18px; color: var(--muted); text-align: center; font-size: .6rem; }
+/* 卡片功能示意 */
+.hero-copy > .hero-note { font-size: .82rem; }
+.phone-screen { padding: 24px 14px 12px; display: flex; flex-direction: column; }
+.mock-search { display: flex; align-items: center; gap: 6px; margin: 20px 0 14px; padding: 9px 10px; color: #707575; background: #eeefee; border-radius: 9px; font-size: .65rem; }
+.mock-search svg { width: 1.1em; height: 1.1em; flex-shrink: 0; }
+.mock-card { margin-bottom: 12px; padding: 12px; background: #eeefee; border-radius: 10px; }
+.mock-card-top { display: flex; align-items: center; justify-content: space-between; gap: 5px; margin-bottom: 12px; color: #687d32; font-size: .52rem; }
+.mock-review-tomorrow { color: #b58a00; }
+.mock-star { color: #00a6d9; font-size: 1.1rem; }
+.mock-card p { margin: 0 0 8px; line-height: 1.5; font-size: .78rem; }
+.mock-card .mock-english { color: #707575; font-size: .74rem; }
+.mock-microphone { flex-shrink: 0; display: grid; place-items: center; width: 42px; height: 42px; margin: auto auto 12px; border-radius: 50%; background: #00afe4; color: white; }
+.mock-microphone svg { width: 23px; height: 23px; }
 a:focus-visible { outline: 3px solid var(--brand); outline-offset: 5px; }
-@media (max-width: 820px) { .feature-grid { grid-template-columns: 1fr; } }
-@media (max-width: 500px) { .hero h1 { font-size: clamp(2.35rem, 10vw, 3.1rem); } .hero-visual { margin-inline: 0; } .sun { width: min(350px, 100%); } }
+@media (max-width: 500px) { .hero h1 { font-size: clamp(2rem, 9vw, 3.1rem); } .hero-visual { margin-inline: 0; } .sun { width: min(350px, 100%); } .mock-search { margin-top: 14px; } .mock-card { padding: 10px; margin-bottom: 10px; } .mock-card-top { margin-bottom: 8px; } }
+
+@media (max-width: 500px) { .section-heading h2 { font-size: clamp(1.65rem, 7.7vw, 2.2rem); } }
